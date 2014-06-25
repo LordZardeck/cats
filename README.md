@@ -62,17 +62,13 @@ Building from source
 =====================
 There is normally no need to compile CATS yourself, since all the compiled files are already included. But if you want to play around with it, here are the steps:
 
-1. Make sure you have installed TypeScript 1.0.1 or later
-
-2. Also make sure you have Nodejs and Jake installed. You can get node from nodejs.org and after that install Jake:
+1. Make sure you have Nodejs installed. You can get node from nodejs.org and after that go to the cats directory and install the project:
  
-        npm install -g jake
+        npm install
 
-2. Go to the cats directory
+3. The following will compile the required files when you make changes:
 
-3. The following will compile the required files:
-
-        jake
+        npm run-script build
 
 That is all there is to it. The lib directory should now have an updated main.js, tsworker.js and uml.js files and you are ready to run CATS editor.
 
